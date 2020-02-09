@@ -81,3 +81,7 @@ Once the view is generated and sent to the user, then the user can interact with
 ### Controller
 
 The **Controller** is the component that receives user input from the view and allows for some appropriate actions to be taken. This can involve making changes to the **Model** and generating a new **View** according to what has changed.
+
+### Example 1 - Express "Hello World"
+
+You can find a (heavily commented / annotated) Express "Hello World" [here](https://github.com/jameslinjl/express-mvc-teaching/blob/master/example-1/app.js).
