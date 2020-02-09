@@ -85,3 +85,5 @@ The **Controller** is the component that receives user input from the view and a
 ### Example 1 - Express "Hello World"
 
 You can find a (heavily commented / annotated) Express "Hello World" [here](https://github.com/jameslinjl/express-mvc-teaching/blob/master/example-1/app.js).
+
+You will notice that we don't have any data here, so no model exists. Our controller is a single route managed by Express. Our view is just pure text, without any additional tooling.
