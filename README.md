@@ -28,3 +28,17 @@ Another example, all HTTP **responses** contain a status code. This may help the
 **HTML** is a markup language that web browsers know how to process display graphically. It has all the basic features for simple web interaction between a human and the internet.
 
 Some examples are displaying text, images, and lists. HTML also allows for text input, button pressing, and form submission to send data from the browser (our client) to a server.
+
+### DOM
+
+The **DOM** is model of a webpage which determines what a browser should display graphically. If you use a browser's debugging tools and "Inspect" a web page, you will find that the structure greatly resembles **HTML**. On a page that was constructed solely by a server's response with pure HTML, the DOM and the HTML response should be pretty much the same.
+
+### JavaScript
+
+**JavaScript** is a programming language that browsers know how to run.
+
+*In the beginning*, JS was only executable in browsers and primarily functioned to make dynamic changes to the **DOM**. This allowed for web pages to have more dynamic behavior.
+
+*Now*, JS is widely used across many parts of the industry. It can run as a server-side language using **Node.js** and has also has a large community expanding libraries and frameworks that use JS in the browser.
+
+:warning: We will be using JavaScript sole as a **server-side** language during the early part of this class. JavaScript's ability to run in the browser will come into play later on in the class.
