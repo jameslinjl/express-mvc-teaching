@@ -41,4 +41,17 @@ The **DOM** is model of a webpage which determines what a browser should display
 
 *Now*, JS is widely used across many parts of the industry. It can run as a server-side language using **Node.js** and has also has a large community expanding libraries and frameworks that use JS in the browser.
 
-:warning: We will be using JavaScript sole as a **server-side** language during the early part of this class. JavaScript's ability to run in the browser will come into play later on in the class.
+:warning: We will be using JavaScript solely as a **server-side** language during the early part of this class. JavaScript's ability to run in the browser will come into play later on in the class.
+
+## Web Frameworks
+
+You can build a web application using pretty much any mature (server-side) programming language. All you need to do is build a program that can:
+1) listen for requests on a network
+2) receive and process the text of an HTTP request (likely as a string)
+3) perform any other logic necessary (e.g. write some data to disk)
+4) construct an HTTP response (again, just a string, as long as it conforms to the protocol's response)
+5) send the request back to the client over the network
+
+In fact, one of my assignments in school (http://www.cs.columbia.edu/~jae/3157/) was to build a program doing exactly the above "from scratch" in C. 
+
+:warning: DON'T DO THE ABOVE FOR THIS CLASS!
