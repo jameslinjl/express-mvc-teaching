@@ -82,6 +82,8 @@ Once the view is generated and sent to the user, then the user can interact with
 
 The **Controller** is the component that receives user input from the view and allows for some appropriate actions to be taken. This can involve making changes to the **Model** and generating a new **View** according to what has changed.
 
+## Web Framework and MVC Examples
+
 ### Example 1 - Express "Hello World"
 
 You can find a (heavily commented / annotated) Express "Hello World" [here](https://github.com/jameslinjl/express-mvc-teaching/blob/master/example-1/app.js).
@@ -93,3 +95,15 @@ You will notice that we don't have any data here, so no model exists. Our contro
 You can find an Express + Handlebars "Hello World" [here](https://github.com/jameslinjl/express-mvc-teaching/blob/master/example-2).
 
 You will notice that we still don't have any data here, so no model exists. Our controller is still a single route managed by Express. However, our view is now Handlebars generated HTML.
+
+### Example 3 - Express + Handlebars with Data
+
+You can find an Express + Handlebars example with data [here](https://github.com/jameslinjl/express-mvc-teaching/blob/master/example-3).
+
+You will notice that we now have a very basic model in our app: a single number. This data tracks the number of times that our server has received a submission of the form. Our controller is still a single route with two methods managed by Express. Our view is now Handlebars generated HTML that has the count templated in dynamically. Our view also allows the user to interact with it and provide input (by clicking the button, pressing enter, or refreshing the page after a submission). 
+
+### Example 4 - Express + Handlebars with Data fetched using Axios
+
+You can find an Express + Handlebars + Axios example [here](https://github.com/jameslinjl/express-mvc-teaching/blob/master/example-4).
+
+You will notice that we now have a more complex model in our app that is located on another server (the todo-api). This data needs to be fetched off the network using Axios. Our controller now manages two routes, which produce two separate views. Our view is Handlebars generated HTML that has the users templated in to form a list.
