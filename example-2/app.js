@@ -1,7 +1,7 @@
-var express = require("express");
-var exphbs = require("express-handlebars");
+const express = require("express");
+const exphbs = require("express-handlebars");
 
-var app = express();
+const app = express();
 
 // the 2 lines of code here configures express to use handlebars library as the view engine for the app
 app.engine("handlebars", exphbs());

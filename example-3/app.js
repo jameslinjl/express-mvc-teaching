@@ -1,13 +1,14 @@
-var express = require("express");
-var exphbs = require("express-handlebars");
+const express = require("express");
+const exphbs = require("express-handlebars");
 
-var app = express();
+const app = express();
 
 app.engine("handlebars", exphbs());
 app.set("view engine", "handlebars");
 
 // we now have data! our model here is just a single number that we can interact with directly using JS
-var buttonClickCount = 0;
+// this model is stored in-memory, so the count will revert whenever the server restarts
+let buttonClickCount = 0;
 
 // we now have 1 route with 2 methods (GET and POST)
 // as our controller, express helps us to control what logic should happen with each method
