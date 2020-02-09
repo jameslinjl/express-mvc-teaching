@@ -60,4 +60,24 @@ In fact, one of my assignments in school (http://www.cs.columbia.edu/~jae/3157/)
 
 There are many, many web frameworks out in the world that have been build across almost every programming language out there. Web frameworks vary greatly in their size and complexity, and each has their pros and cons. Some web frameworks come with lots of tools out-of-the-box, but can be confusing to use or feel too magical. Other web frameworks are very barebones and are easier to understand, but require more work on the programmers parts to either build additional tooling or add plugins.
 
-The web framework we will show examples with in this class is Express, which is in JavaScript (Node.js, since it runs as a server). Express is on the barebones side, which I find beneficial for teaching purposes.
+The web framework we will show examples with in this class is **Express**, which is in JavaScript (Node.js, since it runs as a server). Express is on the barebones side, which I find beneficial for teaching purposes.
+
+:warning: You can feel free to choose a different programming language and web framework for this class. However, teaching staff may be limited in our ability to support you depending on your choice. In addition to JS, I have experience in Python (using the Flask web framework). Jesse has experience in Java (using the Spring web framework).
+
+## MVC
+
+**MVC** stands for **Model-View-Controller**, which is a common way to understand different components of web tooling.
+
+### Model
+
+The **Model** is our data that we are interacting with (typically creating, reading, updating, and deleting it: CRUD). This data might be accessed via a database, a RESTful API like our Todo API, or stored in-memory.
+
+### View
+
+The **View** is how our application displays information to our client along with the tools that are used to generate this display. If our application is directly interacting with a browser, then our view is typically HTML. Sometimes, HTML will need to be dynamically generated (e.g. showing a list of all users from a database), so additional tools are needed to perform some logic. This could be a templating engine, like Handlebars.
+
+Once the view is generated and sent to the user, then the user can interact with it.
+
+### Controller
+
+The **Controller** is the component that receives user input from the view and allows for some appropriate actions to be taken. This can involve making changes to the **Model** and generating a new **View** according to what has changed.
