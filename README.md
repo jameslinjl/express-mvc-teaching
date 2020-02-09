@@ -54,4 +54,10 @@ You can build a web application using pretty much any mature (server-side) progr
 
 In fact, one of my assignments in school (http://www.cs.columbia.edu/~jae/3157/) was to build a program doing exactly the above "from scratch" in C. 
 
-:warning: DON'T DO THE ABOVE FOR THIS CLASS!
+:warning: **DON'T DO THE ABOVE FOR THIS CLASS!**
+
+**Web Frameworks** are libraries, modules, APIs, or packages (depending on what other word you want to call "code that someone else wrote and that you can/should use") that simplify steps 1, 2, 4, and 5 for the web programmer. The third step is typically referred to as your **business logic**, which is where your code is actually performing the "meaningful" parts of whatever you are building.
+
+There are many, many web frameworks out in the world that have been build across almost every programming language out there. Web frameworks vary greatly in their size and complexity, and each has their pros and cons. Some web frameworks come with lots of tools out-of-the-box, but can be confusing to use or feel too magical. Other web frameworks are very barebones and are easier to understand, but require more work on the programmers parts to either build additional tooling or add plugins.
+
+The web framework we will show examples with in this class is Express, which is in JavaScript (Node.js, since it runs as a server). Express is on the barebones side, which I find beneficial for teaching purposes.
